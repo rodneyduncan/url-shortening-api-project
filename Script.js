@@ -63,7 +63,7 @@ const shortenUrl = async() => {
 		})
 		const data = await res.json()
 		//result_url
-		Object.values(data).map(item => `<a class="short-url">${item}</a>`)
+		console.log(Object.values(data).map(item => `<a class="short-url">${item}</a>`))
 	} catch (error) {
 		console.error('Error:', error);
 	}
