@@ -1,0 +1,103 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.nav li{
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+.hero-h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #34313D;
+}
+
+.hero-text{
+    font-size: 1.125rem;
+    color: #9e9aa8;
+}
+
+.hero-btn, .backBtn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #2BD0D0;
+    color: #fff;
+}
+
+.submitBtn{
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: #2BD0D0;
+    color: #fff;
+}
+
+.url-value{
+    color: #34313D;
+}
+
+.short-url{
+    color: #2BD0D0;
+}
+
+.copyBtn{
+    background:  #2BD0D0;
+    color: #fff;
+}
+
+.info h2{
+    color: #34313D;
+    font-size: 1.75rem;
+}
+
+.info p{
+    color: #9e9aa8;
+}
+
+.box h4{
+    color: #34313D;
+}
+
+.box p{
+    color: #9e9aa8;
+}
+
+.back-too-urlShort h1{
+    font-size: 1.75rem;
+    color:#fff;
+    font-weight: bold;
+}
+
+.footer-logo{
+    filter: invert(100%)
+}
+
+.bold-li{
+    font-weight: bold;
+    color: #fff;
+    list-style: none;
+}
+
+.reg-link{
+    font-weight: normal;
+    color: #BFBFBF;
+    list-style: none;
+}
+
+.social-links{
+    list-style: none;
+}
+.social-link{
+    list-style: none;
+}
+
+.attribution{
+    opacity: 25%;
+}

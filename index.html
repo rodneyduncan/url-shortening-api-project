@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <section class="header-section">
@@ -16,8 +17,8 @@
           <li>Pricing</li>
           <li>Resources</li>
           <hr></hr>
-          <li>Login</li>
-          <li>Sign Up</li>
+          <li class="nav-btn">Login</li>
+          <li class="nav-btn">Sign Up</li>
         </ul>
       </nav>
     </header>
@@ -33,9 +34,12 @@
   </section>
   <section  class="url-shortner-section">
     <form id="urlForm" class="url-form">
-      <input id="input" type="url" />
-      <input id="submitBtn" type="submit" value="Shorten URL"  />
+      <input id="input" type="url" placeholder="Shorten a link here..." />
+      <a id="submitBtn" class="submitBtn">Shorten URL</a>
     </form>
+    <div id="shortened-urls" class="shortened-urls">
+
+    </div>
     <div class="info">
       <h2>Advanced Statistics</h2>
       <p>
@@ -76,6 +80,76 @@
       </legend>
     </div>
   </section>
+  <footer>
+    <div class="back-too-urlShort">
+      <h1>Boost your links today</h1>
+      <a id="backBtn" class="backBtn">Get Started</a>
+      <nav class="footer-nav">
+        <img class="footer-logo" src='images\logo.svg' alt="logo" class="logo" />
+        <ul class="nav-ul">
+          <li class="bold-li">
+            Features
+            <ul>
+              <li class="reg-link">
+                Link Shortening
+              </li>
+              <li class="reg-link">
+                Branded Links
+              </li>
+              <li class="reg-link">
+                Analytics
+              </li>
+            </ul>
+          </li>
+          <li class="bold-li">
+            Resources
+            <ul>
+              <li class="reg-link">
+                Blog
+              </li>
+              <li class="reg-link">
+                Developers
+              </li>
+              <li class="reg-link">
+                Support
+              </li>
+            </ul>
+          </li>
+          <li class="bold-li">
+            Company
+            <ul>
+              <li class="reg-link">
+                About
+              </li>
+              <li class="reg-link">
+                Team
+              </li>
+              <li class="reg-link">
+                Careers
+              </li>
+            </ul>
+          </li>
+          <li class="social-links">
+            <ul>
+              <li class="social-link">
+                <img src="images\icon-facebook.svg"/>
+              </li>
+              <li class="social-link">
+                <img src="images\icon-twitter.svg"/>
+              </li>
+              <li class="social-link">
+                <img src="images\icon-pinterest.svg"/>
+                
+              </li>
+              <li class="social-link">
+                <img src="images\icon-instagram.svg"/>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

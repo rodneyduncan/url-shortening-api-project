@@ -1,6 +1,4 @@
-
-const fetchUrl= "/api/v1/shorten";
-
+ 
 
 
 const displayNav = () => {
@@ -63,10 +61,37 @@ const shortenUrl = async() => {
 		})
 		const data = await res.json()
 		//result_url
-		console.log(Object.values(data).map(item => `<a class="short-url">${item}</a>`))
-	} catch (error) {
-		console.error('Error:', error);
+		const fetchValue = Object.values(data).map(item => {
+			return(
+				`<div class="link">
+				<p class="url-value">${longUrl}></p>
+				<a id="short-url" class="short-url">${item}</a>
+				<br>
+				<a id="copyBtn" class="copyBtn">copy</a>
+				</div>`
+			)
+			
+		})
+
+		document.getElementById("shortened-urls").innerHTML = fetchValue
+
+		document.getElementById("copyBtn").addEventListener("click", copyText)
+
+
+function copyText(){
+	console.log("copies")
+	const linkToCopy = document.getElementById("short-url").innerText
+	 navigator.clipboard.writeText(linkToCopy)
+	copyBtn.innerText = 'copied!'
+}
+	} catch (err) {
+		console.error('Error:', err);
 	}
 }
 
 document.getElementById("submitBtn").addEventListener("click", shortenUrl);
+
+
+
+
+
